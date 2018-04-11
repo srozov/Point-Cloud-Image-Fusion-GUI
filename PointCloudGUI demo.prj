@@ -1,0 +1,104 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration file="/Users/semion/Computer_Vision_Project/mCode/demo/PointCloudGUI demo.prj" location="/Users/semion/Computer_Vision_Project/mCode/demo" name="PointCloudGUI demo" target="target.mlapps" target-name="Package App">
+    <param.appname>PointCloudGUI demo</param.appname>
+    <param.authnamewatermark>S Rozov</param.authnamewatermark>
+    <param.email>rozovs@ethz.ch</param.email>
+    <param.company>ETH Zurich</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/Users/semion/Computer_Vision_Project/mCode/demo</param.output>
+    <param.guid>e1b01586-f35e-41c6-a986-2c05dba8b39c</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/PointCloudGUI_demo.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>/Users/semion/Computer_Vision_Project/mCode/Homography_Transform/MaskIGB.m</file>
+      <file>/Users/semion/Computer_Vision_Project/mCode/Homography_Transform/MaskRGB.m</file>
+      <file>/Users/semion/Computer_Vision_Project/mCode/Homography_Transform/computeRowAlignmentRotation.m</file>
+      <file>/Users/semion/Computer_Vision_Project/mCode/build/computeHalfRotations_edit.m</file>
+      <file>/Users/semion/Computer_Vision_Project/mCode/build/writeMultiChannelTIFF.m</file>
+      <file>${PROJECT_ROOT}/frameLeft.tif</file>
+      <file>${PROJECT_ROOT}/frameRight.tif</file>
+      <file>${PROJECT_ROOT}/frameRightTHC.tif</file>
+      <file>${PROJECT_ROOT}/stereoParams_RGB_IGB.mat</file>
+      <file>${PROJECT_ROOT}/stereoParams_RGB_THC.mat</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/semion/Computer_Vision_Project/mCode" name="demo" optional="false">/Users/semion/Computer_Vision_Project/mCode/demo</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2017a.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.12.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
